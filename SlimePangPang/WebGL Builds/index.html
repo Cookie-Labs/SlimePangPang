@@ -40,7 +40,7 @@
 
         function setTelegramUserId(unityInstance) {
             Telegram.WebApp.ready();
-            var id = Telegram.WebApp.initDataUnsafe.user.id;
+            // var id = Telegram.WebApp.initDataUnsafe.user.id;
 
             //유니티 인스턴스에 id값 넘기기
             unityInstance.SendMessage("NetworkManager", "SetUserId", 10);
